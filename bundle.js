@@ -21921,7 +21921,7 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'col-sm-8' },
 	        _react2.default.createElement(
 	          'h3',
 	          null,
@@ -21930,14 +21930,46 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          'Title: ',
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'font-weight-bold' },
+	            'Title: '
+	          ),
+	          ' ',
 	          this.props.book.title
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          'Pages: ',
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'font-weight-bold' },
+	            'Author: '
+	          ),
+	          ' ',
+	          this.props.book.author
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'font-weight-bold' },
+	            'Pages: '
+	          ),
+	          ' ',
 	          this.props.book.pages
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'font-weight-bold' },
+	            'Description:'
+	          ),
+	          ' ',
+	          this.props.book.description
 	        )
 	      );
 	    }
@@ -21994,7 +22026,7 @@
 	});
 
 	exports.default = function () {
-	  return [{ title: 'JavaScript: The Good Parts', pages: 101 }, { title: 'Harry Potter', pages: 39 }, { title: 'The Dark Tower', pages: 85 }, { title: 'Eloquent Ruby', pages: 1 }];
+	  return [{ title: 'JavaScript: The Good Parts', author: 'Douglas Crockford', pages: 172, description: '"Most progamming languages contain good and bad components, but JavaScript has more than its share of the latter, as it was developed and released in a hurry, before it could be refined. THis authoritative book scrapes away the most horrendous features to reveal a subset of JavaScript that\'s more reliable, readable, and maintainable than the language as a whole-a subset you can use to creat truly extensible and efficient code."' }, { title: 'ES6 & Beyond', author: 'Kyle Simpson', pages: 261, description: '"No matter how much experience you have with JavaScript, odds are you don\'t fully understand the language. As part of the "You Don\'t Know JS" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaSCript is built.' }, { title: 'The C Programming Language', author: 'Brian W. Kerninghan and Dennis M. Ritchie', pages: 85, description: '"The authors present the complete guide to ANSI standard C language programming. Written by the developers of C, this new version helps readers keep up with the finalized ANSI standard for C while showing how to take advantage of C\'s rich set of operators, economy of experssions, improved control flow, and data structures. The 2/E has been completely rewritten with additional examples and problem sets to clarify the implementation of difficult language constructs. For years, C programmers have let K&R guide them to building well-structured and efficient programs."' }, { title: 'Eloquent Ruby', author: 'Russ Olsen', pages: 448, description: '"It\'s easy to write correct Ruby code, but to gain the fluency needed to write great Ruby code, you must go beyond syntax and absorb the "Ruby way" of thinking and problem solving. In Eloquent Ruby, Russ Olsen helps you write Ruby like true Rubyists do-so you can leverage its immensive, surprising power.' }];
 	};
 
 /***/ }),
